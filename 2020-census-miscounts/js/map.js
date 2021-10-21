@@ -12,6 +12,7 @@ http://bl.ocks.org/michellechandra/0b2ce4923dc9b5809922 */
 function drawMap(container_width) {
 
   function buildLink(state){
+    if(state == "District of Columbia") state = "washington dc"
     return "https://www.urban.org/sites/default/files/2021/10/20/2020_census_and_the_consequences_of_miscounts_for_fair_outcomes_" + state.toLowerCase().trim().replace(/\s/g,"_") + ".pdf"
 
   }
